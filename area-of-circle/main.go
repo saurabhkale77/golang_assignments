@@ -6,7 +6,12 @@ import (
 )
 
 func main() {
-	var radius float64 = 7.5
+	var radius float64
 
-	fmt.Print("Area of circle with radius - ", radius, " is: ", calculator.CalculateAreaOfCircle(radius))
+	fmt.Printf("Program to calculate the area of a circle\n\n")
+
+	fmt.Printf("Please enter the radius of the circle:\n")
+	fmt.Scanln(&radius)
+
+	fmt.Printf("\nArea of circle with radius - %f is: %.2f", radius, calculator.CalculateAreaOfCircle(radius))
 }
