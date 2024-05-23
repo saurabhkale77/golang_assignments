@@ -1,7 +1,7 @@
 package main
 
 import (
-	"assignment1/simple_interest/calculator"
+	"assignment1/simple-interest/calculator"
 	"fmt"
 )
 

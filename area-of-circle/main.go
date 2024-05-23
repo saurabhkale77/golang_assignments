@@ -1,7 +1,7 @@
 package main
 
 import (
-	"assignment1/area_of_circle/calculator"
+	"assignment1/area-of-circle/calculator"
 	"fmt"
 )
 
