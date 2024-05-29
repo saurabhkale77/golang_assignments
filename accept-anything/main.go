@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type Person struct {
 	name string
@@ -28,14 +31,5 @@ func main() {
 }
 
 func AcceptAnything(value interface{}) {
-	switch value.(type) {
-	case int:
-		fmt.Printf("\nThis is a value of type Integer, %d", value)
-	case string:
-		fmt.Printf("\nThis is a value of type String, %s", value)
-	case bool:
-		fmt.Printf("\nThis is a value of type Boolean, %v", value)
-	case Person:
-		fmt.Printf("\nThis is a value of type Person, %v", value)
-	}
+	fmt.Printf("\nThis is a value of type %s, %v", reflect.TypeOf(value).Name(), value)
 }
