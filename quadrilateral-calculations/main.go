@@ -53,7 +53,18 @@ func main() {
 
 			ptrToSquare.SetSide(sideOfSquare)
 
+			// this also works
+			// square.SetSide(sideOfSquare)
+
 			shapes.PrintAreaAndPerimeter(square)
+
+			// var square shapes.Square
+
+			// square.SetSide(sideOfSquare)
+			// // var ptrToSquare *shapes.Square = &square
+			// // ptrToSquare.SetSide(sideOfSquare)
+
+			// shapes.PrintAreaAndPerimeter(square)
 		}
 	}
 }
