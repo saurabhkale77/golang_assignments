@@ -44,6 +44,10 @@ func (square *Square) SetSide(side float32) {
 	(*square).side = side
 }
 
+// func (square Square) SetSide(side float32) {
+// 	square.side = side
+// }
+
 func PrintAreaAndPerimeter(quadrilateral Quadrilateral) {
 	fmt.Printf("\nArea is : %.2f", quadrilateral.calculateArea())
 	fmt.Printf("\nPerimeter is : %.2f", quadrilateral.calculatePerimeter())
