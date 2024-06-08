@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Printf("\nProgram to print conversation between Alice and Bob using channels\n\n")
 	var conversationStr = "helloBob$helloalice#howareyou?#Iamgood.howareyou?$^"
 
 	var chanOfAlice chan string = make(chan string)
